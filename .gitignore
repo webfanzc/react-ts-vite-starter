@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+_report.html
+eslintrc-auto-import.json
+auto-imports.d.ts

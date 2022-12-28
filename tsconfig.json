@@ -19,18 +19,19 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "~/*": [
+        "src/*"
+      ],
+      "@/*": [
+        "src/*"
+      ],
+    },
   },
-  "paths": {
-    "~/*": [
-      "src/*"
-    ],
-    "@/*": [
-      "src/*"
-    ],
-  },
-  "include": [
-    "src"
+  "exclude": [
+    "dist",
+    "node_modules"
   ],
   "types": [
     "vite/client",

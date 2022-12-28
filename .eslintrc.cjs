@@ -4,6 +4,7 @@ module.exports = {
     es2021: true
   },
   extends: [
+    './eslintrc-auto-import.json',
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
@@ -19,5 +20,9 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['react', '@typescript-eslint'],
-  rules: {}
+  rules: {
+    semi: ['error', 'never'],
+    quotes: ['error', 'single'],
+    'no-undef': ['off']
+  }
 }
