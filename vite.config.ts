@@ -1,11 +1,12 @@
 import { defineConfig, loadEnv } from 'vite'
-import React from '@vitejs/plugin-react-swc'
+import React from '@vitejs/plugin-react'
 import Pages from 'vite-plugin-pages'
 import AutoImport from 'unplugin-auto-import/vite'
 import UnoCSS from 'unocss/vite'
 import { visualizer } from 'rollup-plugin-visualizer'
 import Inspect from 'vite-plugin-inspect'
 import path from 'path'
+import { presetAttributify } from 'unocss'
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {

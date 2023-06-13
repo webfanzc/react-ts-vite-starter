@@ -10,7 +10,8 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'alloy',
     'alloy/react',
-    'alloy/typescript'
+    'alloy/typescript',
+    '@unocss'
   ],
   overrides: [],
   parser: '@typescript-eslint/parser',
@@ -20,9 +21,11 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['react', '@typescript-eslint'],
+
   rules: {
     semi: ['error', 'never'],
     quotes: ['error', 'single'],
-    'no-undef': ['off']
+    'no-undef': ['off'],
+    'react/no-unknown-property': ['off']
   }
 }

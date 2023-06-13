@@ -7,7 +7,7 @@ import {
 	transformerDirectives,
 	transformerVariantGroup,
 } from 'unocss'
-
+import transformerAttributifyJsx from '@unocss/transformer-attributify-jsx-babel'
 export default defineConfig({
 	shortcuts: [
 		['content', 'mx-auto w-300'],
@@ -36,5 +36,5 @@ export default defineConfig({
 			},
 		}),
 	],
-	transformers: [transformerDirectives(), transformerVariantGroup()],
+	transformers: [transformerDirectives(), transformerVariantGroup(), transformerAttributifyJsx()]
 })

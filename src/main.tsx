@@ -6,7 +6,8 @@ import { BrowserRouter as Router } from 'react-router-dom'
 // import "@unocss/reset/tailwind.css";
 import 'dayjs/locale/zh-cn'
 import './index.css'
-import 'uno.css'
+// import 'uno.css'
+import 'virtual:uno.css'
 import 'antd/dist/reset.css'
 
 dayjs.locale('zh-cn')
